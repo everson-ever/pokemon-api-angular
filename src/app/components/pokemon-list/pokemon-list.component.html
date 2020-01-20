@@ -1,0 +1,22 @@
+<section class="box-list">
+  <app-pokemon [pokemon]="this.pokemon"></app-pokemon>
+
+  <div class="box">
+    <p (click)="before()" class="seta">&lt;</p>
+
+    <ul *ngIf="!loading" class="list-pokemon">
+      <li
+        (click)="findOne(pokemon.url)"
+        class="pokemon"
+        *ngFor="let pokemon of pokemons"
+      >
+        {{ pokemon.name }}
+      </li>
+    </ul>
+    <div class="loading-list" *ngIf="loading">
+      <img src="https://i.gifer.com/4V0b.gif" alt="" />
+    </div>
+
+    <p (click)="after()" class="seta">&gt;</p>
+  </div>
+</section>

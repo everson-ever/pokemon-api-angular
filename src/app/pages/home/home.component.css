@@ -1,0 +1,14 @@
+.title {
+	margin-top: 25px;
+	margin-bottom: 50px;
+	font-size: 2em;
+	color: rgb(46, 46, 46);
+	text-align: center;
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+
+	max-width: 100%;
+}

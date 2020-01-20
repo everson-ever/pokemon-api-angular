@@ -1,0 +1,11 @@
+<section class="pokemon" *ngIf="pokemon.length !== 0">
+  <div class="images">
+    <img [src]="pokemon.sprites?.back_default" />
+    <img [src]="pokemon.sprites?.back_shiny" />
+    <img [src]="pokemon.sprites?.front_default" />
+  </div>
+  <div class="info">
+    <p><strong>Pokemon:</strong> {{ pokemon.name }}</p>
+    <p><strong>Experiência:</strong> {{ pokemon.base_experience }}</p>
+  </div>
+</section>

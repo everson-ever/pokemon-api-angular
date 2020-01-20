@@ -1,0 +1,21 @@
+.pokemon {
+	margin-bottom: 20px;
+	padding-bottom: 25px;
+}
+
+.images {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.info p {
+	font-size: 1.1em;
+	color: rgb(156, 156, 156);
+}

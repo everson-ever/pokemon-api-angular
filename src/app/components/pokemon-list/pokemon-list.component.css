@@ -1,0 +1,46 @@
+.box-list {
+	width: 100%;
+	max-width: 500px;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+
+.list-pokemon {
+	width: calc(100% - 40px);
+	max-width: 400px;
+	background-color: #fff;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.loading-list img {
+	width: 120px;
+}
+
+.pokemon {
+	padding: 10px 15px;
+	color: rgb(46, 46, 46);
+	font-size: 1.2em;
+	align-self: stretch;
+	cursor: pointer;
+}
+
+.pokemon:nth-child(2n - 1) {
+	background-color: rgb(240, 240, 240);
+}
+
+.seta {
+	font-size: 1.5em;
+	color: rgb(104, 104, 104);
+	cursor: pointer;
+}
